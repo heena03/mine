@@ -1,3 +1,7 @@
+/* Hide the audio element */
+/* audio {
+  display: none;
+} */
 b{
     font-size: 20px;
     
@@ -105,9 +109,10 @@ span.psw {
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-  span.psw {
+  .forgot {
      display: block;
      float: none;
+     text-align: center;
     
   }
   .cancelbtn {
@@ -116,14 +121,21 @@ span.psw {
 }
 
 button{
-  color:rosybrown;
-  background-color: rgb(116, 12, 12);
-
+  border: none;
+  font-size: 20px;
+  color:#000;
+  background-color:rosybrown;
+  border-radius: 3px;
 }
 .align{
   text-align: right;
-  font-size: 50px;
 }
+
+
+button:hover{
+  background-color: rgb(116, 12, 12) ;
+}
+
 
 /* Style the links inside the sidenav */
 #mySidenav a {

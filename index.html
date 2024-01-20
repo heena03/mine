@@ -10,14 +10,18 @@
 </head>
 <body>
    
+  
     <header>
     
     <img src="bgimage.jpg" alt="" width="45%" height="45%">
-    <h1>~hk<b>WORLD</b></h1>
 
-        <form action="connect.php" method="post">
+   
+    <h1>~hk<b>WORLD</b> </h1>
+   
+        <form action="loginform.php" method="POST">
         <div class="align">
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+         
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto" >Login</button>
          </div>
         <div id="id01" class="modal">
           
@@ -39,11 +43,12 @@
                       
             <div class="container" style="background-color:#f1f1f1">
              
-              <span class="psw">Forgot <a href="#">password?</a></span>
+            <div class="forgot">  Forgot <a href="#">password?</a></span></div>
             </div>
+            <div class="sign">Are you a new user? <a href="form.php">Click Here for Registration</a></div>
             <br>
                 <div class="log">
-              <button type="submit">Login</button>
+              <button type="submit" value="Login">Login</button>
               </div>
               <br>
               <label>
@@ -109,7 +114,7 @@
 
          
           </nav>
-       <div class="todo">
+       <!-- <div class="todo">
          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="to do anything...">
          <button class="searchbtn" onclick="myFunction()"><a href="#"><img src="searchicon.png" alt="" width="25px" height="20px"></a>
          </button>
@@ -129,10 +134,28 @@
   <li><a href="#">How to be a fashion Expert</a></li>
   <li><a href="#">How to prepare a fashion design portfolio</a></li>
 </ul>
+</div> -->
+<div class="todo">
+  <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for anything...">
+  <button class="searchbtn" onclick="searchFunction()">
+      <a href="#"><img src="searchicon.png" alt="" width="25px" height="20px"></a>
+  </button>
 </div>
 
+<div id="searchResults" class="search-bar-items">
+  <div class="search-item" data-answer="h2">how to become a fashion designer? Tricks, Tips, and suggestions</a></div>
+  <div class="search-item" data-answer="searchResults">how to draw fashion sketches</a></div>
+  <div class="search-item" data-answer="How to dress fashionably">How to dress fashionably</a></div>
+  <div class="search-item" data-answer="how to coordinate a fashion show?">how to coordinate a fashion show?</a></div>
+  <div class="search-item" data-answer="how to be a fashion icon">how to be a fashion icon</a></div>
+  <div class="search-item" data-answer="How to be a fashion expert">How to be a fashion expert</a></div>
+  <div class="search-item" data-answer="How to prepare a fashion design portfolio">How to prepare a fashion design portfolio</a></div>
+</div>
+
+
+
     </header>
-    <h2>How to Become a Fashion Designer: Tips, Tricks, & What It Takes to Succeed</h2>
+ <h2>How to Become a Fashion Designer: Tips, Tricks, & What It Takes to Succeed</h2>
     <div class="texts"><p>"Everything you need to know about making your dreams of becoming a fashion designer a reality".</p></div>
 
     <p><b>Written  by Heena Khatri</b></p>
@@ -149,6 +172,8 @@
        
    Develop skills in drawing, sewing, and design. Honing these skills through a degree in fashion design or an internship can be beneficial to your career.
   
+<div id="searchResults" class="search-bar-items">
+
   </li>
     Narrow your interest to a specific design field, such as haute couture or ready-to-wear.</li>
     Practice your craft as much as possible by creating original designs. This will help you develop a better sense of your unique stylistic vision.</li>
@@ -217,6 +242,7 @@
                         <li>Being a fashion designer is probably for you if: You want to devote your life to this career (it's your "vocation"), you don't mind uncertainty or insecurity, you are willing to stand up for what you believe in, you have distinct ideas about what’s important in fashion, you listen to clients well, you know the fashion industry inside out, and you live, eat and breathe fashion.</li>
                             <li>Being a fashion designer is probably not for you if: You can't manage stress well, you don't like uncertainty or instability, you don’t want a career with constant highs and lows, you need other people to praise your efforts, you need a lot of guidance, or you hate being financially unstable.</li>
                     </ul>
+              </div>
                <h6>Setting Yourself Up for Success</h6>
                <img src="r10.jpg" alt="" width="1000px" height="500px">
                <ul>
@@ -279,7 +305,7 @@ Resume
 Mood or concept pages
 Color or textile presentation pages
 Any other pieces that reflect what you're capable of or are evolving into.
-
+                    </div>
                     </li>
                 </ul>
                </p>
